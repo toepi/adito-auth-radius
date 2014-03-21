@@ -1,6 +1,6 @@
 <bundle version="1.0.14" 
 	requiredHostVersion="0.9.0" 
-	id="adito-community-radius" 
+	id="adito-auth-radius" 
 	name="Adito RADIUS" 
 	license="GPLv2" 
 	productURL="http://localhost"  
@@ -11,16 +11,16 @@
 	</description>    
 
     <extension type="plugin" 
-	extension="adito-community-radius" 
+	extension="adito-auth-radius" 
 	name="Adito Community RADIUS">
     	<description>
 		Avantage RADIUS authentication
 	</description>
 
-	<plugin name="adito-community-radius" 
+	<plugin name="adito-auth-radius" 
 		class="com.adito.radius.RADIUSPlugin">
-			<classpath>private/gnu-crypto.jar </classpath>
-			<classpath>private/ipdr.jar </classpath>
+			<classpath>private/gnu-crypto.jar</classpath>
+			<classpath>private/ipdr.jar</classpath>
 			<resources>webapp</resources>	
 		</plugin>
 		
